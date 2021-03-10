@@ -94,6 +94,7 @@ namespace BehindGodsCards.MyGame
             PlayerOne = new Players();
             PlayerOne.AddUnit("Cac");
             PlayerTwo = new Players();
+            HUD Hud = new HUD();
         }
     }
 }

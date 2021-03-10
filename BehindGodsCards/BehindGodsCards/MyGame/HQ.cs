@@ -11,7 +11,7 @@ namespace BehindGodsCards.MyGame.Characters
         public Wall Wall;
         public Fields Fields;
         public Barracks Barracks;
-        public HQ ()
+        public HQ()
         {
             ControlCenter = new MainBase();
             Wall = new Wall();

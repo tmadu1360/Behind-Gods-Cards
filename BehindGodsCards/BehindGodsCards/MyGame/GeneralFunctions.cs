@@ -30,7 +30,33 @@ namespace BehindGodsCards.MyGame
         public static double RelativeMaxLeft;
         public static double RelativeMaxRight;
 
+        
+        public struct Fonts
+        {
+            public static Dictionary<string, SpriteFont> FontList = new Dictionary<string, SpriteFont>();
+            public static void AddFont(string FontName)
+            {
+                FontList.Add(FontName, Content.Load<SpriteFont>(FontName));
+            }
+            public static SpriteFont Get(string FontName)
+            {
+                SpriteFont ToReturn = null;
+                foreach(string Font in FontList.Keys)
+                {
+                    if(Font == FontName)
+                    {
+                        ToReturn = FontList[FontName];
+                    }
+                }
+                if (ToReturn == null)
+                {
+                    ToReturn = FontList["Default"];
+                }
+                return ToReturn;
+            }
+        }
 
+        
         public static void Init(SpriteBatch spritebatch, GraphicsDeviceManager graphics, ContentManager content)
         {
             SpriteBatch = spritebatch;

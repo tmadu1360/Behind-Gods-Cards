@@ -9,6 +9,7 @@ namespace BehindGodsCards.Menu
 {
     public class MainMenu
     {
+        
         public int WindowHeight;
         public int WindowWidth;
 
@@ -23,8 +24,7 @@ namespace BehindGodsCards.Menu
         List<MenuButtons> Boutons = new List<MenuButtons>();
 
         public MainMenu()
-        { 
-        
+        {
             WindowHeight = GeneralFunctions.ScreenHeight;
             WindowWidth = GeneralFunctions.ScreenWidth;
         }
@@ -50,7 +50,6 @@ namespace BehindGodsCards.Menu
                 Boutons[i].ButtonsPosition.X = (WindowWidth - Boutons[i].Sprite1.Width) / 2;
                 Boutons[i].ButtonsPosition.Y = TitreTexture.Height + i * (Boutons[0].Sprite1.Height + ButtonSpace);
             }
-
         }
         public string Update()
         {

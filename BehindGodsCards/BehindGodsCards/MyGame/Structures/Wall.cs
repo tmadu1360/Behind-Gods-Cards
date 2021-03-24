@@ -26,6 +26,11 @@ namespace BehindGodsCards.MyGame.Structures
             Armor = StructStats.wall.Lvl1.Armor;
         }
 
+        public void Update()
+        {
+
+        }
+
         public void LevelUp()
         {
             Lvl = Lvl + 1;

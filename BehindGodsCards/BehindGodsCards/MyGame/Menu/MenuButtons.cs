@@ -67,7 +67,7 @@ namespace BehindGodsCards.Menu
                 Selected = false;
             }
 
-            if (Selected == true && GeneralFunctions.MouseLeftClicked == ButtonState.Pressed)
+            if (Selected && GeneralFunctions.MouseLeftClicked == ButtonState.Pressed)
             {
                 Clicked = true;
             }

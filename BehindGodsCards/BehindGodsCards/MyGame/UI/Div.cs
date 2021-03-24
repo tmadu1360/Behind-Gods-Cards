@@ -7,10 +7,11 @@ using Microsoft.Xna.Framework.Media;
 
 namespace BehindGodsCards.MyGame
 {
-    class Div
+    public class Div
     {
         public List<Texts> Texts;
         public List<Buttons> Buttons;
+        public Vector2 Position;
 
         public void AddText(string text, string font)
         {
@@ -28,9 +29,14 @@ namespace BehindGodsCards.MyGame
         {
             Buttons.Add(new Buttons(name, sprite, spriteSelected, spriteClicked, X, Y));
         }
+        public void AddButton(string name, string sprite, string spriteSelected, string spriteClicked, string spriteSelectedClicked)
+        {
+            Buttons.Add(new Buttons(name, sprite, spriteSelected, spriteClicked, spriteSelectedClicked));
+        }
 
         public Div()
         {
+            Position = new Vector2(0, 0);
             Texts = new List<Texts>();
             Buttons = new List<Buttons>();
         }
@@ -56,13 +62,13 @@ namespace BehindGodsCards.MyGame
                         ToDraw = Button.SpriteClicked;
                     }
                 }
-                GeneralFunctions.SpriteBatch.Draw(ToDraw, Button.Position, Color.White);
+                GeneralFunctions.SpriteBatch.Draw(ToDraw, new Vector2(Button.Position.X + Position.X, Button.Position.Y + Position.Y), Color.White);
             }
             foreach(Texts Text in Texts)
             {
                 if (!Text.Hidden)
                 {
-                    GeneralFunctions.SpriteBatch.DrawString(Text.Font, Text.Text, Text.Position, Color.Black);
+                    GeneralFunctions.SpriteBatch.DrawString(Text.Font, Text.Text, new Vector2(Text.Position.X + Position.X, Text.Position.Y + Position.Y), Color.Black);
                 }
             }
         }

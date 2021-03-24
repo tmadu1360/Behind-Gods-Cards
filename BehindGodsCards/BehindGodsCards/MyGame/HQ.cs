@@ -18,5 +18,17 @@ namespace BehindGodsCards.MyGame.Characters
             Fields = new Fields();
             Barracks = new Barracks();
         }
+        public void Draw()
+        {
+            //ControlCenter.Draw();
+            //Wall.Draw();
+            Barracks.Draw();
+            //Fields.Draw();
+        }
+        public void Update()
+        {
+            Fields.Update();
+            Wall.Update();
+        }
     }
 }

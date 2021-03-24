@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/cyril/Desktop/Professionnel/Ynov/B1/Yday's/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/MenuContent/option_sprite_3.png</SourceFile>
-  <SourceTime>2021-02-24T16:49:09.9949574+01:00</SourceTime>
-  <DestFile>C:/Users/cyril/Desktop/Professionnel/Ynov/B1/Yday's/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/bin/Windows/MenuContent/option_sprite_3.xnb</DestFile>
-  <DestTime>2021-03-03T13:11:21.1137334+01:00</DestTime>
+  <SourceFile>C:/Users/Nanaka/Desktop/Professionnel/Ynov/B1/Ydays/BehindGodsCards/BehindGodsCards/Content/MenuContent/option_sprite_3.png</SourceFile>
+  <SourceTime>2021-02-24T15:49:09.9949574+00:00</SourceTime>
+  <DestFile>C:/Users/Nanaka/Desktop/Professionnel/Ynov/B1/Ydays/BehindGodsCards/BehindGodsCards/Content/bin/Windows/MenuContent/option_sprite_3.xnb</DestFile>
+  <DestTime>2021-03-22T10:39:48.950782+00:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+01:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

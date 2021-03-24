@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace BehindGodsCards.MyGame
 {
-    class Texts
+    public class Texts
     {
         public Vector2 Position;
         public SpriteFont Font;

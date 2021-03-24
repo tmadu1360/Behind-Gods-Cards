@@ -15,7 +15,7 @@ namespace BehindGodsCards.MyGame.Structures
         {
             Def = 0;
         }
-
+        
         public void TakeDamage(int Amount)
         {
             Hp = Hp - (Amount - Def);

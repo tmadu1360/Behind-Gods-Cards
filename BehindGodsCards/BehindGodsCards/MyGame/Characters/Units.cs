@@ -34,7 +34,6 @@ namespace BehindGodsCards.MyGame.Characters
             {
                 if (Animations[I].Name == State)
                 {
-                    System.Diagnostics.Debug.WriteLine("Here");
                     Animations[I].Update();
                 }
             }

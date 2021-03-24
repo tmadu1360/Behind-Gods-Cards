@@ -70,8 +70,10 @@ namespace BehindGodsCards.MyGame
 
         public void Draw()
         {
+            Base.Draw();
             if(Characters.Count > 0)
             {
+                
                 foreach(Units Character in Characters)
                 {
                     foreach(Animation Animation in Character.Animations)

@@ -28,6 +28,7 @@ namespace BehindGodsCards.MyGame
         public string Response;
         public Players PlayerOne;
         public Players PlayerTwo;
+        public HUD Hud;
 
         public GameManager(ContentManager Content, GraphicsDeviceManager Graphics, SpriteBatch SpriteBatch)
         {
@@ -35,6 +36,7 @@ namespace BehindGodsCards.MyGame
             Menu = new MainMenu();
             Map = new Map(Content, SpriteBatch);
             GeneralFunctions.Init(SpriteBatch, Graphics, Content);
+            Hud = new HUD();
         }
         public void Initialise()
         {
@@ -85,6 +87,7 @@ namespace BehindGodsCards.MyGame
             {
                 Map.Draw();
                 PlayerOne.Draw();
+                Hud.Draw();
             }
         }
 

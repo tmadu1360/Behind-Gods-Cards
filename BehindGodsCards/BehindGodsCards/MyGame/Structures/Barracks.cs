@@ -14,7 +14,8 @@ namespace BehindGodsCards.MyGame.Structures
         public int Armor;
         public int MaxUnits;
         public int Lvl;
-
+        public Texture2D Sprite;
+        public Vector2 Position;
 
         public Barracks()
         {
@@ -22,6 +23,8 @@ namespace BehindGodsCards.MyGame.Structures
             Lvl = 1;
             Hp = StructStats.barracks.Lvl1.Health;
             Armor = StructStats.barracks.Lvl1.Armor;
+            Sprite = GeneralFunctions.Content.Load<Texture2D>("GameContent\\Portal");
+            Position = new Vector2(150, 320);
         }
 
         public void LevelUp()
@@ -37,6 +40,10 @@ namespace BehindGodsCards.MyGame.Structures
                 Hp = StructStats.barracks.Lvl3.Health;
                 Armor = StructStats.barracks.Lvl3.Armor;
             }
+        }
+        public void Draw()
+        {
+            GeneralFunctions.SpriteBatch.Draw(Sprite, Position, Color.White);
         }
     }
 }

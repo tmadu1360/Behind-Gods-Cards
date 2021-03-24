@@ -34,7 +34,7 @@ namespace BehindGodsCards.MyGame.Characters
                     break;
             }
             Animations = new List<Animation>();
-            Animations.Add(new Animation("Walk", new List<string>(){ "CharacterWalk0", "CharacterWalk1", "CharacterWalk2" }, 0.25));
+            Animations.Add(new Animation("Walk", new List<string>(){ "CharacterWalk0", "CharacterWalk1", "CharacterWalk2" }, 0.25, "Reverse"));
         }
     }
 }

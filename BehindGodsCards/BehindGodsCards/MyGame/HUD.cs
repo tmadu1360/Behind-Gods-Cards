@@ -27,8 +27,9 @@ namespace BehindGodsCards.MyGame
             UpgradeBuilding = new Div();
 
             LoadContent();
-
-            //MainUI
+            //===============\\
+            //====Main UI====\\
+            //===============\\
             int ButtonSpace = ((((MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) * 2) - MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) / MainUI.Buttons.Count) / 2;
             for(int I = 0; I < MainUI.Buttons.Count; I++)
             {
@@ -38,25 +39,25 @@ namespace BehindGodsCards.MyGame
 
             MainUI.Position.X = GeneralFunctions.ScreenWidth - ((MainUI.Buttons.Count) * (MainUI.Buttons[0].Sprite.Width + ButtonSpace) + ButtonSpace);
             MainUI.Position.Y = 0;
-            //UnitManagment
+            //===============\\
+            //=UnitManagment=\\
+            //===============\\
+            ButtonSpace = ((((MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) * 2) - MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) / MainUI.Buttons.Count) / 2;
+            for (int I = 0; I < MainUI.Buttons.Count; I++)
+            {
+                MainUI.Buttons[I].Position.X = MainUI.Position.X + ((I + 1) * ButtonSpace + I * MainUI.Buttons[I].Sprite.Width);
+                MainUI.Buttons[I].Position.Y = MainUI.Position.Y + 20;
+            }
             UnitManagment.Position.X = 0;
             UnitManagment.Position.Y = 0;
         }
 
         public void Update()
         {
-            //Actualiser les boutons
-            foreach (Buttons Button in MainUI.Buttons)
-            {
-                if (GeneralFunctions.MouseX > Button.Position.X && GeneralFunctions.MouseX < Button.Position.X + Button.Sprite.Width && GeneralFunctions.MouseY > Button.Position.X && GeneralFunctions.MouseY < Button.Position.Y + Button.Sprite.Height)
-                {
-                    Selected = true;
-                }
-                else
-                {
-                    Selected = false;
-                }
-            }
+            MainUI.Update();
+            CreateUnit.Update();
+            UnitManagment.Update();
+            UpgradeBuilding.Update();
         }
 
         public void Draw()
@@ -66,7 +67,7 @@ namespace BehindGodsCards.MyGame
         }
         public void LoadContent()
         {
-            //MainUI
+            //MainUI---
             MainUI.AddButton("Units", "GameContent\\HUD\\Units", "GameContent\\HUD\\Units", "GameContent\\HUD\\Units");
             MainUI.AddButton("Upgrade", "GameContent\\HUD\\Upgrade", "GameContent\\HUD\\Upgrade", "GameContent\\HUD\\Upgrade");
             MainUI.AddButton("Stats", "GameContent\\HUD\\Stats", "GameContent\\HUD\\Stats", "GameContent\\HUD\\Stats");

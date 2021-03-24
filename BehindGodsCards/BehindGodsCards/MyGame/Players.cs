@@ -56,7 +56,6 @@ namespace BehindGodsCards.MyGame
         {
             Characters.Add(new Cac(Base.Barracks.Lvl));
         }
-
         public void Update()
         {
             if(Characters.Count >= 0)
@@ -73,7 +72,6 @@ namespace BehindGodsCards.MyGame
             Base.Draw();
             if(Characters.Count > 0)
             {
-                
                 foreach(Units Character in Characters)
                 {
                     foreach(Animation Animation in Character.Animations)

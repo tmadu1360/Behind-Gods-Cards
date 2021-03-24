@@ -63,9 +63,8 @@ namespace BehindGodsCards
             GraphicsDevice.Clear(Color.Black);
             GameManager.Draw();
             
-            
             _spriteBatch.End();
-
+            
             base.Draw(gameTime);
         }
     }

@@ -45,13 +45,15 @@ namespace BehindGodsCards.MyGame
         {
             if (Buttons.Count > 0)
             {
-                //Tester la collision avec la souris
+                foreach (Buttons Button in Buttons)
+                {
+                    Button.Update();
+                }
             }
         }
-
         public void Draw()
         {
-            foreach(Buttons Button in Buttons)
+            foreach (Buttons Button in Buttons)
             {
                 Texture2D ToDraw = Button.Sprite;
                 if (Button.Selected)
@@ -64,7 +66,7 @@ namespace BehindGodsCards.MyGame
                 }
                 GeneralFunctions.SpriteBatch.Draw(ToDraw, new Vector2(Button.Position.X + Position.X, Button.Position.Y + Position.Y), Color.White);
             }
-            foreach(Texts Text in Texts)
+            foreach (Texts Text in Texts)
             {
                 if (!Text.Hidden)
                 {

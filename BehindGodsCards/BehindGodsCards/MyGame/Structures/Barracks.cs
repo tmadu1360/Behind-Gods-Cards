@@ -43,7 +43,7 @@ namespace BehindGodsCards.MyGame.Structures
         }
         public void Draw()
         {
-            GeneralFunctions.SpriteBatch.Draw(Sprite, Position, Color.White);
+            GeneralFunctions.SpriteBatch.Draw(Sprite, new Vector2(Position.X + Convert.ToSingle(GeneralFunctions.RelativeX), Position.Y), Color.White);
         }
     }
 }

@@ -310,3 +310,8 @@ C:\Users\Nanaka\Desktop\Professionnel\Ynov\B1\Ydays\BehindGodsCards\BehindGodsCa
 C:\Users\Nanaka\Desktop\Professionnel\Ynov\B1\Ydays\BehindGodsCards\BehindGodsCards\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
 C:\Users\Nanaka\Desktop\Professionnel\Ynov\B1\Ydays\BehindGodsCards\BehindGodsCards\obj\Debug\netcoreapp3.1\BehindGodsCards.csproj.CopyComplete
 C:\Users\Nanaka\Desktop\Professionnel\Ynov\B1\Ydays\BehindGodsCards\BehindGodsCards\obj\Debug\netcoreapp3.1\BehindGodsCards.genruntimeconfig.cache
+C:\Behind-Gods-Cards\BehindGodsCards\BehindGodsCards\bin\Debug\netcoreapp3.1\Content\GameContent\CharacterWak0.xnb
+C:\Behind-Gods-Cards\BehindGodsCards\BehindGodsCards\bin\Debug\netcoreapp3.1\Content\GameContent\CharacterWakl0.xnb
+C:\Behind-Gods-Cards\BehindGodsCards\BehindGodsCards\bin\Debug\netcoreapp3.1\Content\GameContent\CharacterWalk0.xnb
+C:\Behind-Gods-Cards\BehindGodsCards\BehindGodsCards\bin\Debug\netcoreapp3.1\Content\GameContent\CharacterWalk1.xnb
+C:\Behind-Gods-Cards\BehindGodsCards\BehindGodsCards\bin\Debug\netcoreapp3.1\Content\GameContent\CharacterWalk2.xnb

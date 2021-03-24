@@ -20,6 +20,7 @@ namespace BehindGodsCards.Menu
         public bool Selected;
         public bool Clicked;
         public string Name;
+        public string OnName;
 
         public MenuButtons(string Name1, string Name2, string Name3, string NameGive)
         {
@@ -46,9 +47,10 @@ namespace BehindGodsCards.Menu
 
         public void Update()
         {
-            if (Selected == true)
+            if (Selected == true || Clicked == true)
             {
                 PlaySelected = false;
+                OnName = Name;
             } else
             {
                 PlaySelected = true;
@@ -57,7 +59,7 @@ namespace BehindGodsCards.Menu
             if (GeneralFunctions.MouseX >= ButtonsPosition.X && GeneralFunctions.MouseX <= ButtonsPosition.X + Sprite1.Width && GeneralFunctions.MouseY >= ButtonsPosition.Y && GeneralFunctions.MouseY <= ButtonsPosition.Y + Sprite1.Height)
             {
                 Selected = true;
-                if (PlaySelected == true)
+                if (PlaySelected == true && Name == OnName)
                 {
                     SelectedSound.Play(1.0f, 0.0f, 0.0f);
                 }

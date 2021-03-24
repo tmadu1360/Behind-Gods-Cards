@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Nanaka/Desktop/Professionnel/Ynov/B1/Ydays/BehindGodsCards/BehindGodsCards/Content/GameContent/CharacterWalk0.png</SourceFile>
-  <SourceTime>2021-03-03T11:06:48.2456374+00:00</SourceTime>
-  <DestFile>C:/Users/Nanaka/Desktop/Professionnel/Ynov/B1/Ydays/BehindGodsCards/BehindGodsCards/Content/bin/Windows/Content/GameContent/CharacterWalk0.xnb</DestFile>
-  <DestTime>2021-03-03T19:37:46.9399808+00:00</DestTime>
+  <SourceFile>C:/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/GameContent/CharacterWalk0.png</SourceFile>
+  <SourceTime>2021-03-10T12:13:01.0009839+01:00</SourceTime>
+  <DestFile>C:/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/bin/Windows/Content/GameContent/CharacterWalk0.xnb</DestFile>
+  <DestTime>2021-03-10T15:00:17.5808359+01:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2020-08-10T16:17:54+01:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

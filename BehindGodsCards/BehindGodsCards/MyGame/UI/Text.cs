@@ -29,7 +29,7 @@ namespace BehindGodsCards.MyGame
 
         public void Draw(Vector2 DivPosition)
         {
-            GeneralFunctions.SpriteBatch.DrawString(Font, Text, new Vector2(DivPosition.X + Position.X, DivPosition.Y + Position.Y), Color.Aqua);
+            GeneralFunctions.SpriteBatch.DrawString(Font, Text, new Vector2(DivPosition.X + Position.X, DivPosition.Y + Position.Y), Color.Cyan);
         }
     }
 }

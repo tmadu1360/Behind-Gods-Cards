@@ -14,7 +14,7 @@ namespace BehindGodsCards.MyGame
     {
         
         public List<Units> Characters = new List<Units>();
-        public int Money;
+        public double Money;
         public int MaxMoney;
         public int MaxUnit;
         public int Farmer;
@@ -32,7 +32,7 @@ namespace BehindGodsCards.MyGame
             Position = position;
         }
 
-        public bool AddMoney(int ValueToAdd)
+        public bool AddMoney(double ValueToAdd)
         {
             Money += ValueToAdd;
             if(Money > MaxMoney)
@@ -69,6 +69,7 @@ namespace BehindGodsCards.MyGame
                     Character.Update();
                 }
             }
+            AddMoney(1 * GeneralFunctions.GameTime.ElapsedGameTime.TotalSeconds);
         }
         
         public void Draw()

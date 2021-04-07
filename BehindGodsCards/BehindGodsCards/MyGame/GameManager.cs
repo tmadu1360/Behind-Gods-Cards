@@ -75,7 +75,7 @@ namespace BehindGodsCards.MyGame
             {
                 Map.Update();
                 PlayerOne.Update();
-                Hud.Update();
+                Hud.Update(PlayerOne.Money);
             }
         }
         public void Draw()

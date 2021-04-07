@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using BehindGodsCards.MyGame;
+
 
 namespace BehindGodsCards.MyGame
 {
@@ -18,6 +20,13 @@ namespace BehindGodsCards.MyGame
 
         public bool Selected;
         public bool Clicked;
+
+        protected Texture2D Infobar;
+        protected Texture2D Bitcoin;
+
+        protected SpriteFont LittleFont;
+        
+        protected double Money;
         
         public HUD()
         {
@@ -34,7 +43,7 @@ namespace BehindGodsCards.MyGame
             for(int I = 0; I < MainUI.Buttons.Count; I++)
             {
                 MainUI.Buttons[I].Position.X = MainUI.Position.X + ((I + 1) * ButtonSpace + I * MainUI.Buttons[I].Sprite.Width);
-                MainUI.Buttons[I].Position.Y = MainUI.Position.Y + 20;
+                MainUI.Buttons[I].Position.Y = MainUI.Position.Y + 35;
             }
             MainUI.Position.X = GeneralFunctions.ScreenWidth - (MainUI.Buttons[3].Position.X + MainUI.Buttons[3].Sprite.Width + ButtonSpace);
             MainUI.Position.Y = 0;
@@ -44,19 +53,19 @@ namespace BehindGodsCards.MyGame
             for (int I = 0; I < UnitManagment.Buttons.Count; I++)
             {
                 UnitManagment.Buttons[I].Position.X = 10;
-                UnitManagment.Buttons[I].Position.Y = I * UnitManagment.Buttons[I].Sprite.Height + (I + 1) *5;
+                UnitManagment.Buttons[I].Position.Y = (I * UnitManagment.Buttons[I].Sprite.Height + (I + 1) *5);
             }
             UnitManagment.Position.X = 0;
-            UnitManagment.Position.Y = 0;
+            UnitManagment.Position.Y = 30;
             UnitManagment.Texts[0].Position.X = 60;
-            UnitManagment.Texts[0].Position.Y = 4;
+            UnitManagment.Texts[0].Position.Y = 6;
             UnitManagment.Texts[1].Position.X = 60;
-            UnitManagment.Texts[1].Position.Y = 50;
+            UnitManagment.Texts[1].Position.Y = 51;
             UnitManagment.Texts[2].Position.X = 60;
-            UnitManagment.Texts[2].Position.Y = 95;
+            UnitManagment.Texts[2].Position.Y = 96;
         }
 
-        public void Update()
+        public void Update(double money)
         {
             MainUI.Update();
             CreateUnit.Update();
@@ -73,17 +82,20 @@ namespace BehindGodsCards.MyGame
                     UnitManagment.Texts[I].Hidden = true;
                 }
             }
+            Money = money;
         }
-
         public void Draw()
         {
             MainUI.Draw();
             UnitManagment.Draw();
-           
+            GeneralFunctions.SpriteBatch.Draw(Infobar, new Vector2(0, 0), Color.White);
+            GeneralFunctions.SpriteBatch.Draw(Bitcoin, new Vector2(15,6),Color.White);
+            GeneralFunctions.SpriteBatch.DrawString(LittleFont, Math.Round(Money).ToString(), new Vector2(45,2),Color.Cyan);
         }
         public void LoadContent()
         {
-
+            LittleFont = GeneralFunctions.Fonts.Get("LittleFont");
+            
             //MainUI---
             MainUI.AddButton("Units", "GameContent\\HUD\\Units", "GameContent\\HUD\\Units", "GameContent\\HUD\\UnitsClicked");
             MainUI.AddButton("Upgrade", "GameContent\\HUD\\Upgrade", "GameContent\\HUD\\UpgradeSelected", "GameContent\\HUD\\UpgradeClicked");
@@ -98,6 +110,9 @@ namespace BehindGodsCards.MyGame
             UnitManagment.AddText("Attack", "Default");
             UnitManagment.AddText("Defend", "Default");
             UnitManagment.AddText("Protect", "Default");
+
+            Infobar = GeneralFunctions.Content.Load<Texture2D>("GameContent\\HUD\\infobar");
+            Bitcoin = GeneralFunctions.Content.Load<Texture2D>("GameContent\\HUD\\Bitcoin");
         }
     }
 }

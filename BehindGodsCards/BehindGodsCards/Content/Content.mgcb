@@ -13,12 +13,31 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin ../../../../../Users/fabri/OneDrive/Images/infobar.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../../../Users/fabri/OneDrive/Images/infobar.png;GameContent/HUD/infobar.png
+
 #begin Fonts/Default.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:Fonts/Default.spritefont
+
+#begin Fonts/File.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Fonts/File.spritefont;Fonts/LittleFont.spritefont
 
 #begin GameContent/CacAttack0.png
 /importer:TextureImporter
@@ -223,6 +242,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GameContent/HUD/AttackSelectedClicked.png
+
+#begin GameContent/HUD/Bitcoin - Copie.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/Bitcoin - Copie.png;GameContent/HUD/Bitcoin.png
 
 #begin GameContent/HUD/Cover.png
 /importer:TextureImporter

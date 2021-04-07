@@ -10,9 +10,15 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Content\GameContent\Fonts\**" />
     <Compile Remove="MyGame\Content\**" />
+    <EmbeddedResource Remove="Content\GameContent\Fonts\**" />
     <EmbeddedResource Remove="MyGame\Content\**" />
+    <None Remove="Content\GameContent\Fonts\**" />
     <None Remove="MyGame\Content\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\Default.spritefont" />
   </ItemGroup>
   <ItemGroup>
     <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
@@ -26,6 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\bin\Windows\Content\" />
+    <Folder Include="Content\Fonts\" />
     <Folder Include="Content\MenuAudio\" />
   </ItemGroup>
 </Project>

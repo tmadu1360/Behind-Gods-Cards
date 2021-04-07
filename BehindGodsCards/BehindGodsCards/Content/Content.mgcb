@@ -13,17 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin GameContent/Barrier.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
+#begin Fonts/Default.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:GameContent/Barrier.png
+/processorParam:TextureFormat=Compressed
+/build:Fonts/Default.spritefont
 
 #begin GameContent/CacAttack0.png
 /importer:TextureImporter
@@ -337,6 +332,30 @@
 /processorParam:TextureFormat=Color
 /build:GameContent/HUD/Menu.png
 
+#begin GameContent/HUD/MenuClicked.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/MenuClicked.png
+
+#begin GameContent/HUD/MenuSelected.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/MenuSelected.png
+
 #begin GameContent/HUD/Stats.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -348,6 +367,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GameContent/HUD/Stats.png
+
+#begin GameContent/HUD/StatsClicked.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/StatsClicked.png
+
+#begin GameContent/HUD/StatsSelected.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/StatsSelected.png
 
 #begin GameContent/HUD/Units.png
 /importer:TextureImporter
@@ -361,6 +404,18 @@
 /processorParam:TextureFormat=Color
 /build:GameContent/HUD/Units.png
 
+#begin GameContent/HUD/UnitsClicked.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/UnitsClicked.png
+
 #begin GameContent/HUD/Upgrade.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -372,6 +427,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GameContent/HUD/Upgrade.png
+
+#begin GameContent/HUD/UpgradeClicked.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/UpgradeClicked.png
+
+#begin GameContent/HUD/UpgradeSelected.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/HUD/UpgradeSelected.png
 
 #begin GameContent/MapBackground.png
 /importer:TextureImporter
@@ -396,6 +475,42 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:GameContent/Portal.png
+
+#begin GameContent/WallAnim0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/WallAnim0.png
+
+#begin GameContent/WallAnim1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/WallAnim1.png
+
+#begin GameContent/WallAnim2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:GameContent/WallAnim2.png
 
 #begin MenuAudio/SelectedSound.wav
 /importer:WavImporter

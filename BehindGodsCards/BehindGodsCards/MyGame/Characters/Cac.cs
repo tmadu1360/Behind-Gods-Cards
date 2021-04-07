@@ -34,7 +34,7 @@ namespace BehindGodsCards.MyGame.Characters
                     break;
             }
             Animations = new List<Animation>();
-            Animations.Add(new Animation("Walk", new List<string>(){ "CharacterWalk0", "CharacterWalk1", "CharacterWalk2" }, 0.25, "Reverse"));
+            Animations.Add(new Animation("Walk", new List<string>() { "CharacterWalk0", "CharacterWalk1", "CharacterWalk2" }, 0.25, "Reverse"));
             Animations.Add(new Animation("Idle", new List<string>() { "CacIdle0", "CacIdle1" }, 0.3, "Basic"));
             Animations.Add(new Animation("Attack", new List<string>() { "CacAttack0", "CacAttack1", "CacAttack2", "CacAttack3" }, 0.15, "Basic"));
             Animations.Add(new Animation("Kick", new List<string>() { "CacKick0", "CacKick1", "CacKick2", "CacKick3" }, 0.10, "Reverse"));

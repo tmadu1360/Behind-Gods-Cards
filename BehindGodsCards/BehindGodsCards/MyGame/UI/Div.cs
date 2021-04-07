@@ -18,7 +18,7 @@ namespace BehindGodsCards.MyGame
         {
             Texts.Add(new Texts(font, text));
         }
-        public void AddText(string text, string font, int X, int Y)
+        public void AddText(string text, string font, float X, float Y)
         {
             Texts.Add(new Texts(font, text, X, Y));
         }
@@ -56,7 +56,6 @@ namespace BehindGodsCards.MyGame
                         {
                             if(button.Name != returned)
                             {
-                                
                                 button.Clicked = false;
                             }
                         }
@@ -73,7 +72,10 @@ namespace BehindGodsCards.MyGame
             }
             foreach (Texts Text in Texts)
             {
-                Text.Draw(Position);
+                if (!Text.Hidden)
+                {
+                    Text.Draw(Position);
+                }
             }
         }
     }

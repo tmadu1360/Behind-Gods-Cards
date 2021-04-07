@@ -36,7 +36,7 @@ namespace BehindGodsCards.MyGame
             public static Dictionary<string, SpriteFont> FontList = new Dictionary<string, SpriteFont>();
             public static void AddFont(string FontName)
             {
-                FontList.Add(FontName, Content.Load<SpriteFont>(FontName));
+                FontList.Add(FontName, Content.Load<SpriteFont>("Fonts\\" + FontName));
             }
             public static SpriteFont Get(string FontName)
             {
@@ -65,6 +65,7 @@ namespace BehindGodsCards.MyGame
             InMenu = false;
             InGame = false;
             RelativeSpeed = 200;
+            Fonts.AddFont("Default");
         }
 
         public static void UpdateMouse()

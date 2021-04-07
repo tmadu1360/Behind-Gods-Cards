@@ -19,16 +19,17 @@ namespace BehindGodsCards.MyGame
             Text = text;
             Hidden = true;
         }
-        public Texts(string font, string text, int X, int Y)
+        public Texts(string font, string text, float X, float Y)
         {
             Font = GeneralFunctions.Fonts.Get(font);
             Text = text;
             Position = new Vector2(X, Y);
+            Hidden = true;
         }
 
-        public void Draw(Vector2 Position)
+        public void Draw(Vector2 DivPosition)
         {
-            GeneralFunctions.SpriteBatch.DrawString(Font, Text, Position, Color.Black);
+            GeneralFunctions.SpriteBatch.DrawString(Font, Text, new Vector2(DivPosition.X + Position.X, DivPosition.Y + Position.Y), Color.Aqua);
         }
     }
 }

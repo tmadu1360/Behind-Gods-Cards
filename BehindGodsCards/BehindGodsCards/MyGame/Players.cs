@@ -21,14 +21,15 @@ namespace BehindGodsCards.MyGame
         public bool IsBot;
         public string PlayerName;
         public HQ Base;
-
-        public Players()
+        public string Position;
+        public Players(string position)
         {
             Base = new HQ();
             Money = 100;
             MaxMoney = 10000;
             MaxUnit = 10;
             Farmer = 0;
+            Position = position;
         }
 
         public bool AddMoney(int ValueToAdd)

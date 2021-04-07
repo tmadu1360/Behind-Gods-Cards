@@ -13,6 +13,7 @@ namespace BehindGodsCards.MyGame
         public double Delay;
         public double DelayCount;
         public int TextureNumber;
+        public bool Pause;
         public List<Texture2D> Textures;
         public Animation(string name, List<string> spritesToAdd, double delay, string type)
         {
@@ -29,28 +30,31 @@ namespace BehindGodsCards.MyGame
         }
         public void Update()
         {
-            DelayCount += 1 * GeneralFunctions.GameTime.ElapsedGameTime.TotalSeconds;
-            if (DelayCount >= Delay)
+            if (!Pause)
             {
-                TextureNumber += ToAdd;
-                DelayCount = 0;
-                if (Type == "Reverse")
+                DelayCount += 1 * GeneralFunctions.GameTime.ElapsedGameTime.TotalSeconds;
+                if (DelayCount >= Delay)
                 {
-                    if (TextureNumber == Textures.Count - 1 && ToAdd > 0)
+                    TextureNumber += ToAdd;
+                    DelayCount = 0;
+                    if (Type == "Reverse")
                     {
-                        ToAdd = 0 - ToAdd;
+                        if (TextureNumber == Textures.Count - 1 && ToAdd > 0)
+                        {
+                            ToAdd = 0 - ToAdd;
+                        }
+                        if (TextureNumber == 0 && ToAdd < 0)
+                        {
+                            ToAdd = 0 - ToAdd;
+                        }
                     }
-                    if (TextureNumber == 0 && ToAdd < 0)
+                    if (Type == "Basic")
                     {
-                        ToAdd = 0 - ToAdd;
+                        if (TextureNumber == Textures.Count)
+                        {
+                            TextureNumber -= Textures.Count;
+                        }
                     }
-                }
-                if (Type == "Basic")
-                {
-                    if (TextureNumber == Textures.Count)
-                    {
-                        TextureNumber -= Textures.Count;
-                    }    
                 }
             }
         }

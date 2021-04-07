@@ -38,6 +38,7 @@ namespace BehindGodsCards.MyGame
             Name = name;
             Position = new Vector2(X, Y);
         }
+
         public Buttons(string name, string texture, string textureSelected, string textureClicked, string textureSelectedClicked)
         {
             Sprite = GeneralFunctions.Content.Load<Texture2D>(texture);

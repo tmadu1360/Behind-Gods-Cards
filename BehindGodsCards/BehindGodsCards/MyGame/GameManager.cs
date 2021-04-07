@@ -95,9 +95,10 @@ namespace BehindGodsCards.MyGame
 
         public void LoadGame()
         {
-            PlayerOne = new Players();
-            PlayerOne.AddUnit("Cac");
-            PlayerTwo = new Players();
+            PlayerOne = new Players("Left");
+            PlayerOne.Base.Wall.Position.X = 780;
+            PlayerOne.Base.Wall.Position.Y = 445;
+            PlayerTwo = new Players("Right");
             HUD Hud = new HUD();
         }
     }

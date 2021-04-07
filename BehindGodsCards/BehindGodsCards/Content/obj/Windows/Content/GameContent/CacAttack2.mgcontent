@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/cyril/Desktop/Professionnel/Ynov/B1/Yday's/Behind Gods Cards/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/GameContent/CacAttack2.png</SourceFile>
-  <SourceTime>2021-03-27T07:14:01.9376502+01:00</SourceTime>
-  <DestFile>C:/Users/cyril/Desktop/Professionnel/Ynov/B1/Yday's/Behind Gods Cards/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/bin/Windows/Content/GameContent/CacAttack2.xnb</DestFile>
-  <DestTime>2021-04-07T08:58:04.2306384+02:00</DestTime>
+  <SourceFile>C:/BGC/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/GameContent/CacAttack2.png</SourceFile>
+  <SourceTime>2021-04-07T13:52:37.1866612+02:00</SourceTime>
+  <DestFile>C:/BGC/Behind-Gods-Cards/BehindGodsCards/BehindGodsCards/Content/bin/Windows/Content/GameContent/CacAttack2.xnb</DestFile>
+  <DestTime>2021-04-07T13:53:04.1449621+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

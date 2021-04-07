@@ -66,6 +66,7 @@ namespace BehindGodsCards.MyGame
             InGame = false;
             RelativeSpeed = 200;
             Fonts.AddFont("Default");
+            Fonts.AddFont("LittleFont");
         }
 
         public static void UpdateMouse()

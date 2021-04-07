@@ -21,35 +21,34 @@ namespace BehindGodsCards.MyGame
         
         public HUD()
         {
-            MainUI = new Div();
-            CreateUnit = new Div();
-            UnitManagment = new Div();
-            UpgradeBuilding = new Div();
+            MainUI = new Div("MainUI");
+            CreateUnit = new Div("CreateUnit");
+            UnitManagment = new Div("UnitManagment");
+            UpgradeBuilding = new Div("UpgradeBuilding");
 
             LoadContent();
             //===============\\
-            //====Main UI====\\
-            //===============\\
+            //=====Main UI====\\
+            //================\\
             int ButtonSpace = ((((MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) * 2) - MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) / MainUI.Buttons.Count) / 2;
             for(int I = 0; I < MainUI.Buttons.Count; I++)
             {
                 MainUI.Buttons[I].Position.X = MainUI.Position.X + ((I + 1) * ButtonSpace + I * MainUI.Buttons[I].Sprite.Width);
                 MainUI.Buttons[I].Position.Y = MainUI.Position.Y + 20;
             }
-
-            MainUI.Position.X = GeneralFunctions.ScreenWidth - ((MainUI.Buttons.Count) * (MainUI.Buttons[0].Sprite.Width + ButtonSpace) + ButtonSpace);
+            MainUI.Position.X = GeneralFunctions.ScreenWidth - (MainUI.Buttons[3].Position.X + MainUI.Buttons[3].Sprite.Width + ButtonSpace);
             MainUI.Position.Y = 0;
             //===============\\
             //=UnitManagment=\\
             //===============\\
-            ButtonSpace = ((((MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) * 2) - MainUI.Buttons.Count * MainUI.Buttons[0].Sprite.Width) / MainUI.Buttons.Count) / 2;
-            for (int I = 0; I < MainUI.Buttons.Count; I++)
+            for (int I = 0; I < UnitManagment.Buttons.Count; I++)
             {
-                MainUI.Buttons[I].Position.X = MainUI.Position.X + ((I + 1) * ButtonSpace + I * MainUI.Buttons[I].Sprite.Width);
-                MainUI.Buttons[I].Position.Y = MainUI.Position.Y + 20;
+                UnitManagment.Buttons[I].Position.X = 10;
+                UnitManagment.Buttons[I].Position.Y = I * UnitManagment.Buttons[I].Sprite.Height + (I + 1) *5;
             }
             UnitManagment.Position.X = 0;
             UnitManagment.Position.Y = 0;
+
         }
 
         public void Update()

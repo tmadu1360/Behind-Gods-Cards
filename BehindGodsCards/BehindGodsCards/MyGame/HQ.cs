@@ -21,7 +21,7 @@ namespace BehindGodsCards.MyGame.Characters
         public void Draw()
         {
             //ControlCenter.Draw();
-            //Wall.Draw();
+            Wall.Draw();
             Barracks.Draw();
             //Fields.Draw();
         }

@@ -24,7 +24,7 @@ namespace BehindGodsCards.MyGame.Structures
             Hp = StructStats.barracks.Lvl1.Health;
             Armor = StructStats.barracks.Lvl1.Armor;
             Sprite = GeneralFunctions.Content.Load<Texture2D>("GameContent\\Portal");
-            Position = new Vector2(150, 320);
+            Position = new Vector2(150, 360);
         }
 
         public void LevelUp()

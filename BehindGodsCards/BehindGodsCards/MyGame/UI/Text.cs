@@ -26,7 +26,7 @@ namespace BehindGodsCards.MyGame
             Position = new Vector2(X, Y);
         }
 
-        public void Draw()
+        public void Draw(Vector2 Position)
         {
             GeneralFunctions.SpriteBatch.DrawString(Font, Text, Position, Color.Black);
         }

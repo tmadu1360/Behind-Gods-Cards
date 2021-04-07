@@ -10,13 +10,14 @@ namespace BehindGodsCards.MyGame
     public class Buttons
     {
         public string Name;
+
         public Vector2 Position;
+        public Texture2D Sprite = null;
+        public Texture2D SpriteSelected = null;
+        public Texture2D SpriteClicked = null;
+        public Texture2D SpriteSelectedClicked = null;
 
-        public Texture2D Sprite;
-        public Texture2D SpriteSelected;
-        public Texture2D SpriteClicked;
-        public Texture2D SpriteSelectedClicked;
-
+        public string ButtonType;
         public bool Selected;
         public bool Clicked;
 
@@ -44,13 +45,13 @@ namespace BehindGodsCards.MyGame
             SpriteClicked = GeneralFunctions.Content.Load<Texture2D>(textureClicked);
             SpriteSelectedClicked = GeneralFunctions.Content.Load<Texture2D>(textureSelectedClicked);
             Name = name;
-            //Position = new Vector2(X, Y);
+            ButtonType = "Switch";
         }
 
-        public void Update()
+        public string Update(Vector2 DivPosition)
         {
             //Actualiser les boutons
-            if (GeneralFunctions.MouseX > Position.X && GeneralFunctions.MouseX < Position.X + Sprite.Width && GeneralFunctions.MouseY > Position.X && GeneralFunctions.MouseY < Position.Y + Sprite.Height)
+            if (GeneralFunctions.MouseX > Position.X + DivPosition.X && GeneralFunctions.MouseX < Position.X + DivPosition.X + Sprite.Width && GeneralFunctions.MouseY > Position.Y + DivPosition.Y && GeneralFunctions.MouseY < Position.Y + Sprite.Height + DivPosition.Y)
             {
                 Selected = true;
             }
@@ -61,24 +62,45 @@ namespace BehindGodsCards.MyGame
             if (Selected && GeneralFunctions.MouseLeftClicked == ButtonState.Pressed)
             {
                 Clicked = true;
-            }else
-            {
-                Clicked  =  false;
+                return Name;
             }
+            return "None";
         }
 
-        public void Draw()
+        public void Draw(Vector2 DivPosition)
         {
             Texture2D ToDraw = Sprite;
-            if(Selected)
+
+            if (SpriteSelectedClicked == null)
             {
-                ToDraw = SpriteSelected;
-                if (Clicked)
+                if (Selected)
                 {
-                    ToDraw = SpriteClicked;
+                    ToDraw = SpriteSelected;
+                    if (Clicked)
+                    {
+                        ToDraw = SpriteClicked;
+                    }
                 }
-                GeneralFunctions.SpriteBatch.Draw(ToDraw, Position, Color.White);
             }
+            else
+            {
+                if (Selected)
+                {
+                    ToDraw = SpriteSelected;
+                    if (Clicked)
+                    {
+                        ToDraw = SpriteSelectedClicked;
+                    }
+                }
+                else
+                {
+                    if (Clicked)
+                    {
+                        ToDraw = SpriteClicked;
+                    }
+                }
+            }
+            GeneralFunctions.SpriteBatch.Draw(ToDraw, new Vector2 (DivPosition.X + Position.X, DivPosition.Y + Position.Y) , Color.White);
         }
     }
 }

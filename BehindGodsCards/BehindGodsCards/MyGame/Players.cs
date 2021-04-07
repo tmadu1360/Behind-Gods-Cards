@@ -55,6 +55,9 @@ namespace BehindGodsCards.MyGame
         public void AddUnit(string UnitName)
         {
             Characters.Add(new Cac(Base.Barracks.Lvl));
+            //Characters.Add(new BehindGodsCards.MyGame.Characters.Range(Base.Barracks.Lvl));
+            //Characters.Add(new Tank(Base.Barracks.Lvl));
+            //Characters.Add(new AntiTank(Base.Barracks.Lvl));
         }
         public void Update()
         {
@@ -66,7 +69,7 @@ namespace BehindGodsCards.MyGame
                 }
             }
         }
-
+        
         public void Draw()
         {
             Base.Draw();
@@ -79,6 +82,18 @@ namespace BehindGodsCards.MyGame
                         if(Animation.Name == "Walk")
                         {
                             GeneralFunctions.SpriteBatch.Draw(Animation.Textures[Animation.TextureNumber], new Vector2(50 + Convert.ToSingle(GeneralFunctions.RelativeX), 50), Color.White);
+                        }
+                        if (Animation.Name == "Idle")
+                        {
+                            GeneralFunctions.SpriteBatch.Draw(Animation.Textures[Animation.TextureNumber], new Vector2(50 + Convert.ToSingle(GeneralFunctions.RelativeX), 150), Color.White);
+                        }
+                        if (Animation.Name == "Attack")
+                        {
+                            GeneralFunctions.SpriteBatch.Draw(Animation.Textures[Animation.TextureNumber], new Vector2(50 + Convert.ToSingle(GeneralFunctions.RelativeX), 300), Color.White);
+                        }
+                        if (Animation.Name == "Kick")
+                        {
+                            GeneralFunctions.SpriteBatch.Draw(Animation.Textures[Animation.TextureNumber], new Vector2(50 + Convert.ToSingle(GeneralFunctions.RelativeX), 450), Color.White);
                         }
                     }
                 }

@@ -9,6 +9,7 @@ namespace BehindGodsCards.MyGame
 {
     public class Div
     {
+        public string Name;
         public List<Texts> Texts;
         public List<Buttons> Buttons;
         public Vector2 Position;
@@ -34,8 +35,9 @@ namespace BehindGodsCards.MyGame
             Buttons.Add(new Buttons(name, sprite, spriteSelected, spriteClicked, spriteSelectedClicked));
         }
 
-        public Div()
+        public Div(string name)
         {
+            Name = name;
             Position = new Vector2(0, 0);
             Texts = new List<Texts>();
             Buttons = new List<Buttons>();
@@ -47,31 +49,31 @@ namespace BehindGodsCards.MyGame
             {
                 foreach (Buttons Button in Buttons)
                 {
-                    Button.Update();
+                    string returned = Button.Update(Position);
+                    if (returned != "None" && Name == "UnitManagment")
+                    {
+                        foreach (Buttons button in Buttons)
+                        {
+                            if(button.Name != returned)
+                            {
+                                
+                                button.Clicked = false;
+                            }
+                        }
+                    }
                 }
             }
         }
         public void Draw()
         {
+            
             foreach (Buttons Button in Buttons)
             {
-                Texture2D ToDraw = Button.Sprite;
-                if (Button.Selected)
-                {
-                    ToDraw = Button.SpriteSelected;
-                    if (Button.Clicked)
-                    {
-                        ToDraw = Button.SpriteClicked;
-                    }
-                }
-                GeneralFunctions.SpriteBatch.Draw(ToDraw, new Vector2(Button.Position.X + Position.X, Button.Position.Y + Position.Y), Color.White);
+                Button.Draw(Position);
             }
             foreach (Texts Text in Texts)
             {
-                if (!Text.Hidden)
-                {
-                    GeneralFunctions.SpriteBatch.DrawString(Text.Font, Text.Text, new Vector2(Text.Position.X + Position.X, Text.Position.Y + Position.Y), Color.Black);
-                }
+                Text.Draw(Position);
             }
         }
     }

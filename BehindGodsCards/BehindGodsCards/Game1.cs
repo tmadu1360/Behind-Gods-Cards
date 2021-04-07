@@ -43,6 +43,7 @@ namespace BehindGodsCards
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             GameManager = new GameManager(Content, _graphics, _spriteBatch);
             GameManager.Initialise();
+
         }
 
         protected override void Update(GameTime gameTime)

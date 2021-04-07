@@ -36,6 +36,7 @@ namespace BehindGodsCards.MyGame.Characters
                     Cost = UnitsStats.range.Lvl3.Cost;
                     break;
             }
+
         }
     }
 }

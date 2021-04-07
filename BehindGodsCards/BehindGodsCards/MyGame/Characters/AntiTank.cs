@@ -39,6 +39,7 @@ namespace BehindGodsCards.MyGame.Characters
                     HpDamage = UnitsStats.antiTank.Lvl3.HpDamage;
                     break;
             }
+
         }
     }
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Nanaka/Desktop/Professionnel/Ynov/B1/Ydays/BehindGodsCards/BehindGodsCards/Content/GameContent/HUD/CoverSelected.png</SourceFile>
-  <SourceTime>2021-03-17T11:51:27.4861726+00:00</SourceTime>
-  <DestFile>C:/Users/Nanaka/Desktop/Professionnel/Ynov/B1/Ydays/BehindGodsCards/BehindGodsCards/Content/bin/Windows/GameContent/HUD/CoverSelected.xnb</DestFile>
-  <DestTime>2021-03-22T10:39:45.3424583+00:00</DestTime>
+  <SourceFile>C:/Users/cyril/Desktop/BGC/BGC/BehindGodsCards/BehindGodsCards/Content/GameContent/HUD/CoverSelected.png</SourceFile>
+  <SourceTime>2021-03-27T07:14:02.0104483+01:00</SourceTime>
+  <DestFile>C:/Users/cyril/Desktop/BGC/BGC/BehindGodsCards/BehindGodsCards/Content/bin/Windows/GameContent/HUD/CoverSelected.xnb</DestFile>
+  <DestTime>2021-04-02T15:50:16.0648606+02:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2020-08-10T16:17:54+01:00</ImporterTime>
+  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2020-08-10T16:17:54+01:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

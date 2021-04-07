@@ -7320,19 +7320,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nanaka\\.nuget\\packages\\": {}
+    "C:\\Users\\cyril\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nanaka\\Desktop\\Professionnel\\Ynov\\B1\\Ydays\\BehindGodsCards\\BehindGodsCards\\BehindGodsCards.csproj",
+      "projectUniqueName": "C:\\Users\\cyril\\Desktop\\Professionnel\\Ynov\\B1\\Yday's\\Behind Gods Cards\\Behind-Gods-Cards\\BehindGodsCards\\BehindGodsCards\\BehindGodsCards.csproj",
       "projectName": "BehindGodsCards",
-      "projectPath": "C:\\Users\\Nanaka\\Desktop\\Professionnel\\Ynov\\B1\\Ydays\\BehindGodsCards\\BehindGodsCards\\BehindGodsCards.csproj",
-      "packagesPath": "C:\\Users\\Nanaka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nanaka\\Desktop\\Professionnel\\Ynov\\B1\\Ydays\\BehindGodsCards\\BehindGodsCards\\obj\\",
+      "projectPath": "C:\\Users\\cyril\\Desktop\\Professionnel\\Ynov\\B1\\Yday's\\Behind Gods Cards\\Behind-Gods-Cards\\BehindGodsCards\\BehindGodsCards\\BehindGodsCards.csproj",
+      "packagesPath": "C:\\Users\\cyril\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cyril\\Desktop\\Professionnel\\Ynov\\B1\\Yday's\\Behind Gods Cards\\Behind-Gods-Cards\\BehindGodsCards\\BehindGodsCards\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nanaka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cyril\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7385,7 +7385,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
